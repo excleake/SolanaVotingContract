@@ -122,7 +122,7 @@ SolanaVoting/
 ├── docs/
 │   ├── TECHNICAL_REPORT.md
 │   └── screenshots/
-│       └── results.png.png
+│       └── results.png
 └── src/
     ├── SolanaVoting.Client/
     │   ├── Program.cs
