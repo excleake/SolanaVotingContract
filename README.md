@@ -98,6 +98,20 @@ dotnet run --project src/SolanaVoting.Client/SolanaVoting.Client.csproj
 
 ---
 
+## 📄 Technical Report
+
+A short technical report describing the implementation details, limitations, and conclusions of this project is available here:
+
+➡️ **[Technical Report](docs/TECHNICAL_REPORT.md)**
+
+The report covers:
+- What functionality is fully implemented
+- Known limitations and simplifications
+- Lessons learned while working with Solana, Anchor, and a C# client
+- Observations about PDA-based account modeling and voting logic
+
+---
+
 ## 📂 Repository Structure
 
 ```text
@@ -105,6 +119,10 @@ SolanaVoting/
 ├── .gitignore
 ├── LICENSE
 ├── README.md
+├── docs/
+│   ├── TECHNICAL_REPORT.md
+│   └── screenshots/
+│       └── results.png.png
 └── src/
     ├── SolanaVoting.Client/
     │   ├── Program.cs
@@ -132,7 +150,7 @@ This project is a Proof of Concept and includes several intentional simplificati
 - No voting expiration or time-based restrictions
 - Voting options are limited to 2–3 predefined answers
 - No on-chain validation for duplicate voting beyond PDA-based constraints
-- No frontend UI; interaction is done via a console client
+- No frontend UI, interaction is done via a console client
 - No upgrade mechanism for the deployed smart contract
 
 These limitations are acceptable for a PoC and help keep the focus on core Solana concepts.
@@ -156,4 +174,4 @@ All dependencies are used in accordance with their respective licenses.
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/excleake/SolanaVoting/blob/master/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
